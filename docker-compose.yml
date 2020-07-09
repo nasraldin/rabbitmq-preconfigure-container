@@ -16,8 +16,8 @@ services:
     build: .
     container_name: rabbitmq-client
     restart: unless-stopped
-    env_file:
-      - .env
+    environment:
+      - RABBITMQ_NODENAME=rabbit@rabbitmq-server
     volumes:
       - rabbitmq_data:/data
 
