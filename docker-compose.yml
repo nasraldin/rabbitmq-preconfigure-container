@@ -12,14 +12,6 @@ services:
       - "15672:15672"
     volumes:
       - rabbitmq_data:/data
-  rabbitmq-client:
-    build: .
-    container_name: rabbitmq-client
-    restart: unless-stopped
-    environment:
-      - RABBITMQ_NODENAME=rabbit@rabbitmq-server
-    volumes:
-      - rabbitmq_data:/data
 
 volumes:
   assets: {}

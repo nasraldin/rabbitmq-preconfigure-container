@@ -30,11 +30,26 @@ docker-compose up --build -d
 command output
 ```bash
 Starting rabbitmq-server ... done
-Starting rabbitmq-client ... done
+```
+
+Build and run the RabbitMQ client container:
+
+```bash
+cd ./rabbitmq-client
+
+./build_client.sh
+./run_client-compose.sh
+```
+
+Client it's remove when you exit bash he just work one time and exit if you need again login to client again run the ./run_client.sh
+
+** to login to client container bash
+
+```bash
+./run_client-compose.sh
 ```
 
 You should see a running container in Docker that looks something like the following:
-
 
 ```bash
 docker ps
@@ -46,12 +61,6 @@ if you running portainer you can see the new stack named as **rabbitmq-dev**
  portainer default url on [http://localhost:9000](http://localhost:9000/#/stacks/rabbitmq-dev?type=2&external=true)
  
  <img src="https://github.com/nasraldin/rabbitmq-preconfigure-container/blob/master/img/rabbitmq-dev-stack.png" />
-
-** to login to client container bash
-
-```bash
-docker exec -it rabbitmq-client bash
-```
 
 #### Step-2:
 
