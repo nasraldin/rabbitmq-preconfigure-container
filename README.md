@@ -1,6 +1,6 @@
 # Pre-configure RabbitMQ Custom Container
 
-Creates a custom docker container for RabbitMQ with a pre-configure vhost (example-vhost), exchange (example-exchange), and queue (example-queue) with appropriate bindings therein.
+Creates a custom docker container for RabbitMQ with a pre-configure users, vhost (example-vhost), exchange (example-exchange), and queue (example-queue) with appropriate bindings therein.
 
 You can use this project to create your own pre-configured RabbitMQ image and container that you setup either by
 
@@ -89,8 +89,8 @@ Start in the root directory of this project, then
 Build and run the RabbitMQ server container:
 
 ```bash
-./build_client.sh
-./run_client.sh
+./build_server.sh
+./run_server.sh
 ```
 This should bring you to a bash command prompt for the client container.
 
