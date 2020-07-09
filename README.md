@@ -80,8 +80,8 @@ Start in the root directory of this project, then
 Build and run the RabbitMQ server container:
 
 ```bash
-./build_client.sh
-./run_client.sh
+./build_server.sh
+./run_server.sh
 ```
 This should bring you to a bash command prompt for the client container.
 
