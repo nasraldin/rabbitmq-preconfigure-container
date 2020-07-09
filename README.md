@@ -132,7 +132,7 @@ exit
 
 #### Remove RabbitMQ containers:
 
-Back in the root of this project, if you with to remove the RabbitMQ containers:
+Back in the root of this project, if you wish to remove the RabbitMQ containers:
 
 ```bash
 ./remove-containers.sh
